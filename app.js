@@ -153,7 +153,7 @@ class App{
         function onSessionStarted(session){
             session.addEventListener('end',onSessionEnded);
             self.renderer.xr.setReferenceSpaceType('local');
-            self.render.xr.setSession(session);
+            self.renderer.xr.setSession(session);
             currentSession = session;
         }
         function onSessionEnded(){
