@@ -116,7 +116,7 @@ class App{
 		// Load a glTF resource
 		loader.load(
 			// resource URL
-			`chair${id}.glb`,
+			`kitchen.glb`,
 			// called when the resource is loaded
 			function ( gltf ) {
 
