@@ -169,7 +169,7 @@ class App{
 			exclusive: this.createVirtualReality,
 			type: XRSession.AUGMENTATION
 		}
-        this.display.requestSession(sessionInitParamers).then(onSessionStarted);
+        navigator.xr.requestSession(sessionInitParamers).then(onSessionStarted);
     }
     
     requestHitTestSource(){
