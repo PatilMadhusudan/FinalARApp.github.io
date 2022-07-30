@@ -165,11 +165,7 @@ class App{
             }
             self.renderer.setAnimationLoop(null);
         }
-	    let sessionInitParamers = {
-			exclusive: this.createVirtualReality,
-			type: XRSession.AUGMENTATION
-		}
-        navigator.xr.requestSession(sessionInitParamers).then(onSessionStarted);
+	    navigator.xr.requestSession('immersive-ar',sessionInit).then(onSessionStarted);
     }
     
     requestHitTestSource(){
