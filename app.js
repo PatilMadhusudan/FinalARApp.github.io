@@ -112,11 +112,25 @@ class App{
         const self = this;
         
         this.loadingBar.visible = true;
-		
+        let file = null;
+		if(id===1){
+            file='1bhk.glb';
+        }
+        else if(id===2){
+            file='2bhk.glb';
+        }
+        else if(id===3){
+            file='T-Square.glb';
+        }
+        else if(id===4)
+        {
+            file='kitchen.glb';
+        }
+
 		// Load a glTF resource
 		loader.load(
 			// resource URL
-			`kitchen.glb`,
+			`${file}`,
 			// called when the resource is loaded
 			function ( gltf ) {
 

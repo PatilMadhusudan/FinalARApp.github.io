@@ -8,6 +8,13 @@ body,
     -webkit-user-select: none;
     user-select: none;
 }
+.fabtownlogo{
+    position: absolute;
+    width: 146px;
+    height: 145px;
+    left: 35%;
+    top: 40vh;
+  }
 .xr-canvas {
     position: absolute;
     top: 0;
