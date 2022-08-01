@@ -135,9 +135,8 @@ class App{
 			function ( gltf ) {
 
 				self.scene.add( gltf.scene );
-				self.scene.scale.set(0.5,0.5,0.5);
                 self.chair = gltf.scene;
-        	
+        
                 self.chair.visible = false; 
                 
                 self.loadingBar.visible = false;
