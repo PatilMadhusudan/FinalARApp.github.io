@@ -106,7 +106,7 @@ class App{
     }
     
 	showChair(id){
-        this.initVR();
+        this.initAR();
         
 		const loader = new GLTFLoader( ).setPath(this.assetsPath);
         const self = this;
